@@ -4,6 +4,21 @@ Banc d'essai moteur interactif : régime, boîte de vitesses, pédales et sons m
 
 **▶ Démo en ligne : [https://yoannservices.github.io/banc-essai-moteur/](https://yoannservices.github.io/banc-essai-moteur/)**
 
+## Fonctionnalités
+
+- Choix de la voiture (marque, modèle, année, moteur) avec l'enregistrement sonore du même moteur
+- Boîte de vitesses réglable (vitesse maxi par rapport) et suralimentation modifiable
+- Conduite aux trois pédales : compte-tours, son, couple, puissance, pression turbo, calage et rupteur
+- Animation des pistons (admission, compression, combustion, échappement) et courbes de couple / puissance
+
+## Commandes
+
+| Touche | Action |
+|---|---|
+| Maj / Q / ← | Embrayage |
+| S / Espace / ↓ | Frein |
+| Z / W / ↑ | Accélérateur |
+
 ## Lancer en local
 
 Aucune installation : ouvrez `index.html` dans un navigateur, ou servez le dossier :
@@ -12,7 +27,17 @@ Aucune installation : ouvrez `index.html` dans un navigateur, ou servez le dossi
 python -m http.server 8000
 ```
 
-puis allez sur http://localhost:8000.
+puis allez sur http://localhost:8000 (dans le dossier `web/` de Mes Projets : http://localhost:8000/loisirs/essaie-moteur/).
+
+## Structure
+
+- `index.html`, `style.css`
+- `js/main.js` : simulation moteur et interface
+- `js/sons.js` : gestion des sons
+
+## À savoir
+
+Cliquez une fois dans la page pour activer le son (règle des navigateurs).
 
 ## Technologies
 
